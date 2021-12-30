@@ -4,12 +4,13 @@ Written by: Paul Clark
 
 Written Using: Python
 
-Date: 23 AUGUST 2021
+Date: 30 DECEMBER 2021
 
-Time Taken: 4 hours
+Version: 1
 
-Still to do: Code for dealing cards after first deal
-             Checking totals to see who has won
-             Proper Display of Card Totals
-             Exception Handling
-             Testing using unittest or doctest 
+Function: To play 21 Caard Game Automatically
+          As per Guardian Coding Exercises
+          Specified on Github at:
+          https://github.com/guardian/coding-exercises/tree/main/21s
+          
+          
