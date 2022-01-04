@@ -43,25 +43,28 @@ class TestData(unittest.TestCase):
         self.assertEqual(9, result2)
         self.assertEqual(11, result3)
         
-    def test_pack_of_cards_produce_deck_returns_correct_result(self):
+    def test_pack_of_cards_produce_deck_retns_correct_num_of_cards(self):
         # Arrange
         pack1 = PackOfCards.packofcards()
         
         # Act
-        result1 = pack1.produce_deck()
+        result1 = len(pack1.produce_deck())
         
-        # Print
-        print(result1)
+        # Assert
+        self.assertEqual(52,result1)
         
-    def test_pack_of_cards_shuffle_deck_returns_correct_result(self):
+    def test_pack_of_cards_shuffle_deck_retns_correct_num_of_cards(self):
         # Arrange
         pack1 = PackOfCards.packofcards()
+        unshuffled_cards = pack1.produce_deck()
         
         # Act
-        result2 = pack1.shuffle_deck()
+        result1 = len(pack1.shuffle_deck())
         
-        # Print
-        print('result2 = ',result2)
+        # Assert
+        self.assertEqual(52,result1)
+        print(pack1.shuffle_deck())
+ 
         
 if __name__ == '__main__':
     unittest.main()
