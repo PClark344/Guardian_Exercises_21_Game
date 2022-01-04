@@ -19,6 +19,7 @@
 
 import unittest
 import Card
+import PackOfCards
 import constant
 
 class TestData(unittest.TestCase):
@@ -41,9 +42,26 @@ class TestData(unittest.TestCase):
         self.assertEqual(10, result1)
         self.assertEqual(9, result2)
         self.assertEqual(11, result3)
-
- 
-     
-           
+        
+    def test_pack_of_cards_produce_deck_returns_correct_result(self):
+        # Arrange
+        pack1 = PackOfCards.packofcards()
+        
+        # Act
+        result1 = pack1.produce_deck()
+        
+        # Print
+        print(result1)
+        
+    def test_pack_of_cards_shuffle_deck_returns_correct_result(self):
+        # Arrange
+        pack1 = PackOfCards.packofcards()
+        
+        # Act
+        result2 = pack1.shuffle_deck()
+        
+        # Print
+        print('result2 = ',result2)
+        
 if __name__ == '__main__':
     unittest.main()
